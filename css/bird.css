@@ -72,3 +72,60 @@ button:hover{
     font-size: 1.5em;
     color: #ffea00;
 }
+@media (max-width: 650px) {
+
+    .welcome-box {
+        width: 90vw; /* Adjust width */
+        height: 75vh; /* Adjust height */
+    }
+
+    .result-box {
+        width: 90vw; /* Adjust width */
+        height: 25vh; /* Adjust height */
+    }
+
+    button {
+        font-size: 1em; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+/* Media Query for 450px */
+@media (max-width: 530px) {
+
+    .welcome-box {
+        width: 90vw; /* Adjust width */
+        height: 70vh; /* Adjust height */
+    }
+
+    .result-box {
+        width: 90vw; /* Adjust width */
+        height: 20vh; /* Adjust height */
+    }
+    .welcome-box{
+        font-size: smaller;
+    }
+    
+}
+
+/* Media Query for 315px */
+@media (max-width: 380px) {
+    .welcome-box {
+        width: 90vw; /* Maintain width */
+        height: 60vh; /* Adjust height */
+    }
+
+    .result-box {
+        width: 90vw; /* Maintain width */
+        height: 15vh; /* Adjust height */
+    }
+
+    .welcome-box p, .result-box p {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    button {
+        font-size: 0.8em; /* Smaller button font size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}

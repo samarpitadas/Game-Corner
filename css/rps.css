@@ -179,3 +179,47 @@ button{
 .welcome-box button:hover{
     background-color: #070e01;
 }
+@media (max-width: 650px) {
+    .welcome-box {
+        width: 90vw; /* Adjust width */
+        height: 75vh; /* Adjust height */
+    }
+    button {
+        font-size: 1em; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+/* Media Query for 450px */
+@media (max-width: 540px) {
+
+    .welcome-box {
+        width: 90vw; /* Adjust width */
+        height: 70vh; /* Adjust height */
+    }
+    .welcome-box{
+        font-size: smaller;
+    }
+    .welcome-box p{
+        font-size: 1.2em; /* Smaller font size */
+    }
+}
+
+/* Media Query for 315px */
+@media (max-width: 380px) {
+    
+    .welcome-box {
+        width: 90vw; /* Maintain width */
+        height: 60vh; /* Adjust height */
+    }
+
+   
+    .welcome-box p{
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    button {
+        font-size: 0.8em; /* Smaller button font size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}

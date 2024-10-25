@@ -89,3 +89,89 @@ button:hover{
 .candy {
     transition: transform 0.6s ease, opacity 0.3s ease;
 }
+/* Media Query for 650px */
+@media (max-width: 650px) {
+    #board {
+        width: 360px; /* Adjust board width */
+        height: 360px; /* Adjust board height */
+    }
+
+    #board img {
+        width: 40px; /* Adjust image size */
+        height: 40px; /* Maintain aspect ratio */
+    }
+
+    .welcome-box {
+        width: 90vw; /* Adjust width */
+        height: 75vh; /* Adjust height */
+    }
+
+    .result-box {
+        width: 90vw; /* Adjust width */
+        height: 25vh; /* Adjust height */
+    }
+
+    button {
+        font-size: 1em; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+/* Media Query for 450px */
+@media (max-width: 530px) {
+    #board {
+        width: 360px; /* Further adjust board width */
+        height: 360px; /* Further adjust board height */
+    }
+
+    #board img {
+        width: 40px; /* Increase image size for better visibility */
+        height: 40px; /* Maintain aspect ratio */
+    }
+
+    .welcome-box {
+        width: 90vw; /* Adjust width */
+        height: 70vh; /* Adjust height */
+    }
+
+    .result-box {
+        width: 90vw; /* Adjust width */
+        height: 20vh; /* Adjust height */
+    }
+    .welcome-box{
+        font-size: smaller;
+    }
+    
+}
+
+/* Media Query for 315px */
+@media (max-width: 380px) {
+    #board {
+        width: 270px; /* Full width for very small screens */
+        height: 270px; /* Full height for very small screens */
+    }
+
+    #board img {
+        width: 30px; /* Increase image size */
+        height: 30px; /* Maintain aspect ratio */
+    }
+
+    .welcome-box {
+        width: 90vw; /* Maintain width */
+        height: 60vh; /* Adjust height */
+    }
+
+    .result-box {
+        width: 90vw; /* Maintain width */
+        height: 15vh; /* Adjust height */
+    }
+
+    .welcome-box p, .result-box p {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    button {
+        font-size: 0.8em; /* Smaller button font size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}

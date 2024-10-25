@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,8 @@
         body {
             font-family: 'Courier New', Courier, monospace;
             background-image: url("https://img.freepik.com/premium-photo/retro-arcade-games-neon-lights-s-synthwave-background_1222783-8097.jpg");
-            background-size: cover; 
-            color: #ffffff; 
+            background-size: cover;
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -27,6 +28,7 @@
         .game-cards {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 30px;
         }
 
@@ -60,8 +62,58 @@
             color: #ffcc00;
             text-shadow: 1px 1px 0 #ff6600;
         }
+
+        @media (max-width: 700px) {
+            .card {
+                width: 200px;
+                /* Adjust card width for smaller screens */
+                height: 300px;
+                /* Adjust card height */
+            }
+            .card h2{
+                padding: 0 ;
+                margin-top: 0;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 2em;
+                /* Smaller font size for h1 */
+                margin-bottom: 20px;
+                /* Adjust margin */
+            }
+
+            .card {
+                width: 150px;
+                /* Further reduce card width */
+                height: 160px;
+                /* Further reduce card height */
+            }
+            .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        }
+
+        @media (max-width: 315px) {
+            h1 {
+                font-size: 1.5em;
+                /* Even smaller font size for h1 */
+            }
+
+            .card {
+                width: 150px;
+                /* Minimal card width */
+                height: 220px;
+                /* Minimal card height */
+            }
+        }
     </style>
 </head>
+
 <body>
     <h1 style="font-size: 3em;">Game Corner</h1>
     <div class="game-cards">
@@ -70,13 +122,16 @@
             <h2>Candy Quest</h2>
         </div>
         <div class="card" onclick="window.location.href='bird.html'">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNwdQ5UeRNpxSdIBr2u_RGBVLFvA9MgAgeA&s" alt="Game 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNwdQ5UeRNpxSdIBr2u_RGBVLFvA9MgAgeA&s"
+                alt="Game 2">
             <h2>Pipe Pass</h2>
         </div>
         <div class="card" onclick="window.location.href='rps.html'">
-            <img src="https://png.pngtree.com/png-clipart/20201209/original/pngtree-rock-paper-scissors-sitting-png-image_5656223.jpg" alt="Game 3">
+            <img src="https://png.pngtree.com/png-clipart/20201209/original/pngtree-rock-paper-scissors-sitting-png-image_5656223.jpg"
+                alt="Game 3">
             <h2>Rock, Paper and Scissors</h2>
         </div>
     </div>
 </body>
+
 </html>
