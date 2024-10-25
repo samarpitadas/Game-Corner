@@ -1,6 +1,6 @@
 let board;
-let boardWidth = 360;
-let boardHeight = 610;
+let boardWidth = 300;
+let boardHeight = 550;
 let context;
 
 let birdWidth = 34;
@@ -55,10 +55,10 @@ function startGame() {
     };
     
     topPipeImg = new Image();
-    topPipeImg.src = "../images/toppipe.png";
+    topPipeImg.src = "./images/toppipe.png";
     
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "../images/bottompipe.png";
+    bottomPipeImg.src = "./images/bottompipe.png";
     
     gameStarted = true;
     bird.y = birdY;
