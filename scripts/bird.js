@@ -69,6 +69,10 @@ function startGame() {
     requestAnimationFrame(update);
     setInterval(placePipes, 1300);
     document.addEventListener("keydown", moveBird);
+    board.addEventListener("touchstart", function(event) {
+        event.preventDefault(); 
+        moveBird(); 
+    });
 }
 
 function update() {
