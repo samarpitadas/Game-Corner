@@ -1,0 +1,91 @@
+body {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+}
+
+#welcome, #results {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.welcome-box{
+    width: 600px;
+    height: 600px;
+    background-color: #0a0a30;
+    border: 5px solid slategray;
+    color: #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.welcome-box p{
+    font-size: 1.5em;
+    color: #ffea00;
+    text-align: left;
+}
+
+.result-box{
+    width: 400px;
+    height: 200px;
+    background-color: #0a0a30;
+    border: 5px solid slategray;
+    color: #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.result-box p{
+    font-size: 1.5em;
+    color: #ffea00;
+}
+
+button{
+    background-color: #ff3d00; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background-color 0.2s; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+    background-color: #070e01;
+}
+
+#board.blur {
+    filter: blur(5px);
+}
+.candy {
+    transition: transform 0.6s ease, opacity 0.3s ease;
+}

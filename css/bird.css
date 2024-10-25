@@ -1,0 +1,74 @@
+body {
+    color: rgb(0, 0, 0);
+    background-color: black;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url("https://img.freepik.com/premium-vector/pixel-art-arcade-game-scene-with-wood-house-trees-fence-clouds-8bit-background_360488-288.jpg");
+    background-size: cover;
+}
+
+#board {
+    border: 2px solid black;
+    background-image: url("../images/flappybirdbg.png");
+}
+p{
+    font-weight: 700;
+    font: 1.5em;
+}
+#welcome, #results {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.welcome-box{
+    width: 600px;
+    height: 600px;
+    background-color: #0a0a30;
+    border: 5px solid slategray;
+    color: #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.welcome-box p{
+    font-size: 1.5em;
+    color: #ffea00;
+    text-align: left;
+}
+button{
+    background-color: #ff3d00; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background-color 0.2s; 
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    background-color: #070e01;
+}
+.result-box{
+    width: 400px;
+    height: 200px;
+    background-color: #0a0a30;
+    border: 5px solid slategray;
+    color: #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.result-box p{
+    font-size: 1.5em;
+    color: #ffea00;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Quest</title>
+    <link rel="stylesheet" href="css/candy.css">
+    <script src="scripts/candy.js"></script>
+</head>
+
+<body>
+    <div id="welcome">
+        <div class="welcome-box">
+            <h1>Welcome to Candy Quest!</h1>
+            <h2>Here’s how to play:</h2>
+            <p>1. Your goal is to score as many points as possible within 20 moves.</p>
+            <p>2. Swap adjacent candies to create groups of three or more candies of the same color. The more candies
+                you crush in a single move, the higher your score! </p>
+            <p>3. Try to beat your personal high score with each round! </p>
+            <h2>Are you ready to challenge yourself? May the best score win!</h2>
+            <button id="playBtn">PLAY!</button>
+        </div>
+    </div>
+    <div id="results" style="display: none;">
+        <div class="result-box">
+            <h1>Game Over!</h1>
+            <p>Your score: <span id="finalScore">0</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+    <h1 style="color: black;">Score: <span id="score">0</span></h1>
+    <h2 style="color: black;">Moves Left: <span id="movesLeft">20</span></h2>
+    <div id="board"></div>
+</body>
+
+
+</html>

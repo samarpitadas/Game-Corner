@@ -1,0 +1,181 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: black;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item{
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+.item:hover {
+    
+    box-shadow: 0 0 10px 3px cornflowerblue; 
+}
+button{
+    background-color: black;
+    color: cornflowerblue;
+    font-size: 30px;
+    border: none;
+    margin: 10px 40px;
+    cursor: pointer;
+}
+.image1{
+    background-image: url("../images/rock\ smile.webp");
+    background-size: cover;
+    height: 120px;
+    width: 110px;
+    margin: 30px 30px 0px 30px;
+}
+.image2{
+    background-image: url("../images/paper\ smile.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 92px;height: 120px;
+    width: 110px;
+    margin: 30px 30px 0px 30px;
+}
+.image3{
+    background-image: url("../images/scissor\ smile.png");
+    background-size: cover;
+    height: 120px;
+    width: 110px;
+    margin: 30px 30px 0px 43.5px;
+}
+.message{
+    text-align: center;
+    color: #ffe5b4;
+    font-size: 30px;
+    margin: 30px;
+}
+.results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornflowerblue;
+}
+.result{
+    padding: 5px 50px 5px;
+    font-size: 25px;
+    border-right: 2px solid;
+}
+.number{
+    padding: 30px;
+    text-align: center;
+    color: #ffefb4;
+}
+.reset{
+    border-radius: 5px;
+    border: 2px solid;
+}
+.reset:hover{
+    background-color: cornflowerblue;
+    color: black;
+    transition-duration: 0.25s;
+}
+.all-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 540px) {
+    *{
+        font-size: 20px;
+    }
+    
+    .item {
+        margin-bottom: 20px; 
+    }
+    
+    button {
+        margin: 5px; 
+        font-size: 20px;
+    }
+    
+    .message {
+        margin: 30px; 
+    }
+    
+    .image1, .image2, .image3 {
+        height: 80px;
+        width: 74px;  
+        margin: 10px; 
+    }
+    
+    .result {
+        padding: 5px 30px 5px;
+    }
+    
+    .number {
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 317px){
+    *{
+        font-size: 15px;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .button{
+        margin: 5px;
+        font-size: 15px;
+    }
+}
+#modal {
+    
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 100; 
+}
+
+.welcome-box{
+    width: 600px;
+    height: 600px;
+    background-color: #0a0a30;
+    border: 5px solid slategray;
+    color: #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.welcome-box p{
+    font-size: 1.5em;
+    color: #ffea00;
+    text-align: left;
+}
+.welcome-box button{
+    background-color: #ff3d00; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background-color 0.2s; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.welcome-box button:hover{
+    background-color: #070e01;
+}

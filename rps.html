@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/rps.css">
+    <style>
+        #countdown {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+            color: #3ca3d9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="modal">
+        <div class="welcome-box">
+            <h1>Welcome to Rock, Paper, Scissors!</h1>
+            <h2>Here’s how to play:</h2>
+            <p>1. Choose Rock, Paper, or Scissors.</p>
+            <p>2. The computer will make its choice.</p>
+            <p>3. Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock!</p>
+            <p>4. Try to win as many rounds as you can!</p>
+            <h2>Are you ready? Let’s get started!</h2>
+            <button id="playBtn">PLAY!</button>
+        </div>
+    </div>
+    <div id="game" class="blur" style="display: none;">
+        <h1>Rock, Paper and Scissors Game</h1>
+        <div class="items">
+            <div class="item" onclick="
+        startCountdown();
+        setTimeout(function(){
+            computerChoice=generateComputerChoice();
+            result=getResult(computerChoice,'🪨');
+            changeMessage('🪨');
+            updateResult();
+        },3500);">
+                <div class="image image1"></div>
+                <button>Rock</button>
+            </div>
+            <div class="item" onclick="
+        startCountdown();
+        setTimeout(function(){
+            computerChoice=generateComputerChoice();
+            result=getResult(computerChoice,'📃');
+            changeMessage('📃');
+            updateResult();
+        },3500);">
+                <div class="image image2"></div>
+                <button>Paper</button>
+            </div>
+            <div class="item" onclick="
+        startCountdown();
+        setTimeout(function(){
+            computerChoice=generateComputerChoice();
+            result=getResult(computerChoice,'✂️');
+            changeMessage('✂️');
+            updateResult();
+        },3500);">
+                <div class="image image3"></div>
+                <button>Scissors</button>
+
+            </div>
+        </div>
+
+        <div class="report">
+            <div class="message">
+                <div id="countdown" style="text-align: center;"></div>
+                Choose one of the above!
+            </div>
+
+            <div class="all-content">
+                <div class="results">
+                    <div class="result">
+                        <div class="heading">Rounds Won</div>
+                        <div class="number">0</div>
+                    </div>
+                    <div class="result">
+                        <div class="heading"> Rounds Lost</div>
+                        <div class="number">0</div>
+                    </div>
+                    <div class="result" style="border: none;">
+                        <div class="heading">Rounds Tied</div>
+                        <div class="number">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/rps.js">
+    </script>
+
+</body>
+
+</html>
