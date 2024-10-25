@@ -55,10 +55,10 @@ function startGame() {
     };
     
     topPipeImg = new Image();
-    topPipeImg.src = "../images/toppipe.png";
+    topPipeImg.src = "./images/toppipe.png";
     
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "../images/bottompipe.png";
+    bottomPipeImg.src = "./images/bottompipe.png";
     
     gameStarted = true;
     bird.y = birdY;
