@@ -47,4 +47,4 @@ git clone https://github.com/yourusername/game-corner.git
 cd game-corner
 ```
 
-### NOTE: These games are currenty available only on your PC and desktops. Responsiveness and touch sensitivity features are to be added later.
+### NOTE: These games are currenty available only on your PC and desktops. Touch sensitivity features are to be added later.
